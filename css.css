@@ -9,3 +9,7 @@ body {
 a {
   color: CornflowerBlue;
 }
+
+.topImg {
+  max-width: 100%;
+}

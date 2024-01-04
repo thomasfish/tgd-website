@@ -172,7 +172,7 @@ var villagerNames = [
   "Flurry",
   "Francine",
   "Frank",
-  "Feckles",
+  "Freckles",
   "Frett",
   "Freya",
   "Friga",

@@ -59,4 +59,11 @@ h1 {
 
 .villagersection h2 {
   text-align: center;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .villagersection h2 {
+    font-size: 17px;
+  }
 }

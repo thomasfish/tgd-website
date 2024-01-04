@@ -504,10 +504,10 @@ function newVillagers() {
   while (villagerId1 == villagerId2) {
     villagerId2 = getRandomInt(0, villagerNames.length);
   }
-  document.getElementById("villager1").children[0].src = "http://ec2-13-53-212-226.eu-north-1.compute.amazonaws.com/imgs/" + String(villagerId1 + 1).padStart(3, '0') + ".png";
+  document.getElementById("villager1").children[0].src = "https://poll.thomasgamedocs.com/imgs/" + String(villagerId1 + 1).padStart(3, '0') + ".png";
   document.getElementById("villager1").children[1].innerHTML = villagerNames[villagerId1];
 
-  document.getElementById("villager2").children[0].src = "http://ec2-13-53-212-226.eu-north-1.compute.amazonaws.com/imgs/" + String(villagerId2 + 1).padStart(3, '0') + ".png";
+  document.getElementById("villager2").children[0].src = "https://poll.thomasgamedocs.com/imgs/" + String(villagerId2 + 1).padStart(3, '0') + ".png";
   document.getElementById("villager2").children[1].innerHTML = villagerNames[villagerId2];
 }
 
@@ -518,7 +518,7 @@ function getCounter() {
       document.getElementById("counter").innerHTML = this.responseText;
     }
   }
-  xmlhttp.open("GET","http://ec2-13-53-212-226.eu-north-1.compute.amazonaws.com/getCounter.php",true);
+  xmlhttp.open("GET","https://poll.thomasgamedocs.com/getCounter.php",true);
   xmlhttp.send();
 }
 
@@ -543,7 +543,7 @@ function recordWin(winner) {
       document.getElementById("counter").innerHTML = this.responseText;
     }
   }
-  xmlhttp.open("POST","http://ec2-13-53-212-226.eu-north-1.compute.amazonaws.com/saveResults.php",true);
+  xmlhttp.open("POST","https://poll.thomasgamedocs.com/saveResults.php",true);
   xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   xmlhttp.send("winner=" + winningVillager + "&loser=" + losingVillager);
 

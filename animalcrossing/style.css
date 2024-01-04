@@ -1,0 +1,62 @@
+body {
+  background: #222;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.grey {
+  color: #bbb;
+  font-style: italic;
+}
+
+#footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.counter {
+  font-size: 23px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.villagersection {
+  width: 30%;
+  display: inline-block;
+  background: #444;
+  border-radius: 12px;
+  padding: 25px 10px 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  top: 0;
+}
+
+.villagersection:hover {
+  top: -5px;
+  background-color: #555;
+}
+
+.villagersection img {
+  width: 100%;;
+  height: 200px;
+  object-fit: contain;
+}
+
+.villagersection h2 {
+  text-align: center;
+}

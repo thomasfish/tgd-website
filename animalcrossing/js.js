@@ -525,27 +525,39 @@ function getCounter() {
 newVillagers();
 getCounter();
 
+var enoughTimePassed = true;
+
 function recordWin(winner) {
-  var winningVillager;
-  var losingVillager;
-  if (winner == 1) {
-    winningVillager = villagerId1;
-    losingVillager = villagerId2;
-  } else if (winner == 2) {
-    winningVillager = villagerId2;
-    losingVillager = villagerId1;
-  }
-
-
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-      document.getElementById("counter").innerHTML = this.responseText;
+  if (enoughTimePassed) {
+  
+    var winningVillager;
+    var losingVillager;
+    if (winner == 1) {
+      winningVillager = villagerId1;
+      losingVillager = villagerId2;
+    } else if (winner == 2) {
+      winningVillager = villagerId2;
+      losingVillager = villagerId1;
     }
-  }
-  xmlhttp.open("POST","https://poll.thomasgamedocs.com/saveResults.php",true);
-  xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-  xmlhttp.send("winner=" + winningVillager + "&loser=" + losingVillager);
+  
+  
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function() {
+      if (this.readyState==4 && this.status==200) {
+        document.getElementById("counter").innerHTML = this.responseText;
+      }
+    }
+    xmlhttp.open("POST","https://poll.thomasgamedocs.com/saveResults.php",true);
+    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xmlhttp.send("winner=" + winningVillager + "&loser=" + losingVillager);
+  
+    newVillagers();
 
-  newVillagers();
+    enoughTimePassed = false;
+    setTimeout(() => {
+      enoughTimePassed = true;
+    }, "400");
+  } else {
+    alert("Please wait longer between votes. This website is experiencing high traffic.");
+  }
 }

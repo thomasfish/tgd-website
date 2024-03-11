@@ -523,12 +523,10 @@ function newVillagers() {
 }*/
 
 newVillagers();
-getCounter();
+/*getCounter();*/
 
-var enoughTimePassed = true;
 
 function recordWin(winner) {
-  if (enoughTimePassed) {
   
     var winningVillager;
     var losingVillager;
@@ -552,12 +550,4 @@ function recordWin(winner) {
     xmlhttp.send("winner=" + winningVillager + "&loser=" + losingVillager);*/
   
     newVillagers();
-
-    enoughTimePassed = false;
-    setTimeout(() => {
-      enoughTimePassed = true;
-    }, "400");
-  } else {
-    alert("Please wait longer between votes. This website is experiencing high traffic.");
-  }
 }

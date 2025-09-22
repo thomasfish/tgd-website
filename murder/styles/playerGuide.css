@@ -25,7 +25,7 @@ main {
 }
 
 .characterId {
-  background-image: url("imgs/silhouette.png");
+  background-image: url("../imgs/silhouette.png");
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: bottom -20px right 0px;

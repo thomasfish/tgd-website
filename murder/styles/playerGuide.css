@@ -1,0 +1,83 @@
+* {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+body {
+  background: #222;
+  padding: 30px 10px;
+  margin: 0;
+  font-size: 20px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  background: #222;
+}
+
+.section {
+  padding: 20px;
+  background: #444;
+  
+  margin-bottom: 30px;
+}
+
+.characterId {
+  background-image: url("imgs/silhouette.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: bottom -20px right 0px;
+  
+}
+
+.characterId h1  {
+  text-align: center;
+  margin-top: 10px;;
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.secrets1, .secrets2 {
+  background: darkred;
+}
+
+.murderer {
+  background: darkgreen;
+}
+
+.infoHide {
+  transition: max-height 1s ease;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.infoHide.hiddenInfo {
+  max-height: 0;
+}
+
+.moreInfo .button {
+  cursor: pointer;
+  background: white;
+  padding: 10px;
+  display: inline-block;
+  color: #444;
+  box-shadow: #222 0 7px 0;
+  margin-top: 0;
+}
+
+.laterInfo {
+  display: none;
+}
+
+.laterInfo.showInfo {
+  display: block;
+}
+
+ul li {
+  margin-bottom: 10px;
+}

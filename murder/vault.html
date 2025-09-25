@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Celine's evidence vault🔒</title>
+  <link rel="stylesheet" href="styles/vault.css">
+</head>
+<body>
+  <main>
+    <div class="section">
+      <h1>Celine's evidence vault🔒</h1>
+      <ul>
+      <li>Enclosed on this tablet are pieces of evidence from recent investigations.</li>
+      <li>Crack each code to unlock the evidence.</li>
+      <li>When all the codes are cracked, the most crucial evidence will be revealed.</li>
+    </div>
+    <div class="section">
+      <div class="lockcontainer">
+        <input type="number" data-password="76" data-canedit=true id="lock1" min="0" max="99" value="00" />
+        <button class="locknumber" onclick="changelockvalue('lock1', 10)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock1', 1)">0</button>
+        <div class="solvedbox">
+          <h3>Solved!</h3>
+          <p>STATION PORTER'S TESTIMONY:</p>
+          <ul>
+            <li>A gun fell out of someone’s suitcase.</li>
+            <li> The owner, an older person, stuffed it back in hurriedly.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="lockcontainer">
+        <input type="number" data-password="236" data-canedit=true id="lock2" min="1" max="999" value="000" />
+        <button class="locknumber" onclick="changelockvalue('lock2', 100)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock2', 10)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock2', 1)">0</button>
+        <div class="solvedbox">
+          <h3>Solved!</h3>
+          <p>DARK WEB FORUM POSTS:</p>
+          <ul>
+            <li>Wanted: agents to uncover the identity of a whistleblower who leaked to the press. Will pay well.</li>
+            <li>See previous post. In addition, I would like to be sold a gun. Again, will pay well.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="lockcontainer">
+        <input type="number" data-password="8427" data-canedit=true id="lock3" min="1" max="9999" value="000" />
+        <button class="locknumber" onclick="changelockvalue('lock3', 1000)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock3', 100)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock3', 10)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock3', 1)">0</button>
+        <div class="solvedbox">
+          <h3>Solved!</h3>
+          <p>PRISON DATASHEET:</p>
+          <ul>
+            <li>Prisoner name: Charlotte "Charlie" Gibson</li>
+            <li>Status: Escaped</li>
+            <li>Responsible guard: Brenda Locket</li>
+            <li>Current whereabouts: Unknown</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      
+      <div class="section">
+      <div class="lockcontainer">
+        <input type="number" data-password="58216" data-canedit=true id="lock4" min="1" max="99999" value="000" />
+        <button class="locknumber" onclick="changelockvalue('lock4', 10000)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock4', 1000)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock4', 100)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock4', 10)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock4', 1)">0</button>
+        <div class="solvedbox">
+          <h3>Solved!</h3>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="finalsecrets" id="finalsecrets">
+      <div class="section">
+        <h1>Top secret area🔓</h1>
+        <p>You have unlocked every code!</p>
+        <ul>
+          <li>LODGE CCTV: The people standing near Celine when the lights went out were Gloria, Father, Brenda and Viola.</li>
+        </ul>
+        <ul>
+      </div>
+    </div>
+    
+    
+  </main>
+  
+  <script src="scripts/vault.js"></script>
+</body>
+</html>

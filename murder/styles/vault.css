@@ -1,0 +1,92 @@
+* {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+body {
+  background: #222;
+  padding: 30px 10px;
+  margin: 0;
+  font-size: 20px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  background: #222;
+}
+
+.section {
+  padding: 20px;
+  background: #444;
+  
+  margin-bottom: 30px;
+}
+
+.lockcontainer {
+  text-align: center;
+}
+
+.solvedbox h3 {
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+  
+}
+
+.solvedbox p, .solvedbox ul, .solvedbox li {
+  text-align: left;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.lockcontainer input {
+  display: none;
+}
+
+.lockcontainer .locknumber {
+  display: inline-block;
+  background: #666;
+  padding: 25px;
+  font-size: 60px;
+  margin: 10px;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.lockcontainer.solved .locknumber {
+  background: darkgreen;
+}
+
+.solvedbox {
+  transition: max-height 1s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.lockcontainer.solved .solvedbox {
+  max-height: 1000px;
+}
+
+.finalsecrets {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.finalsecrets.unlocked {
+  max-height: 2000px;
+}
+
+.finalsecrets .section {
+  background: darkgreen;
+}

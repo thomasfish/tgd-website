@@ -24,6 +24,7 @@ function changelockvalue(lockid, updatevalue) {
     if (currentvalue == lock.dataset.password) {
       lock.parentElement.className = "lockcontainer solved";
       locksunlocked[lockid] = true;
+      document.getElementById("unlocksound").currentTime = 0;
       document.getElementById("unlocksound").play();
       
       var allunlocked = true;

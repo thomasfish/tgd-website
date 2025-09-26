@@ -1,4 +1,4 @@
-var locksunlocked = {lock1:false, lock2:false, lock3:false, lock4:false};
+var locksunlocked = {lock1:false, lock2:false, lock3:false, lock4:false, lock5:false};
 
 function changelockvalue(lockid, updatevalue) {
   var lock = document.getElementById(lockid);
@@ -24,6 +24,7 @@ function changelockvalue(lockid, updatevalue) {
     if (currentvalue == lock.dataset.password) {
       lock.parentElement.className = "lockcontainer solved";
       locksunlocked[lockid] = true;
+      document.getElementById("unlocksound").play();
       
       var allunlocked = true;
       for (var i = 0; i < Object.entries(locksunlocked).length; i++) {

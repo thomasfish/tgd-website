@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="styles/vault.css">
 </head>
 <body>
+  <audio id="unlocksound" style="display:none;">
+    <source src="unlock.wav">
+  </audio>
+
   <main>
     <div class="section">
       <h1>Celine's evidence vault🔒</h1>
@@ -50,7 +54,7 @@
     
     <div class="section">
       <div class="lockcontainer">
-        <input type="number" data-password="8427" data-canedit=true id="lock3" min="1" max="9999" value="000" />
+        <input type="number" data-password="8427" data-canedit=true id="lock3" min="1" max="9999" value="0000" />
         <button class="locknumber" onclick="changelockvalue('lock3', 1000)">0</button>
         <button class="locknumber" onclick="changelockvalue('lock3', 100)">0</button>
         <button class="locknumber" onclick="changelockvalue('lock3', 10)">0</button>
@@ -66,11 +70,11 @@
           </ul>
         </div>
       </div>
-      </div>
+    </div>
       
-      <div class="section">
+    <div class="section">
       <div class="lockcontainer">
-        <input type="number" data-password="58216" data-canedit=true id="lock4" min="1" max="99999" value="000" />
+        <input type="number" data-password="58216" data-canedit=true id="lock4" min="1" max="99999" value="00000" />
         <button class="locknumber" onclick="changelockvalue('lock4', 10000)">0</button>
         <button class="locknumber" onclick="changelockvalue('lock4', 1000)">0</button>
         <button class="locknumber" onclick="changelockvalue('lock4', 100)">0</button>
@@ -78,6 +82,38 @@
         <button class="locknumber" onclick="changelockvalue('lock4', 1)">0</button>
         <div class="solvedbox">
           <h3>Solved!</h3>
+          <p>SHOP STAFF'S TESTIMONY:</p>
+          <ul>
+            <li>The only guests who visited the supply shop were a young man, a young woman, and an older man.</li>
+          </ul>
+          <p>STATION PORTER'S TESTIMONY:</p>
+          <ul>
+            <li>There was one young person who didn't ask for directions to the villa.</li>
+            <li>Perhaps they already knew the way?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="lockcontainer">
+        <input type="number" data-password="351463" data-canedit=true id="lock5" min="1" max="999999" value="000000" />
+        <button class="locknumber" onclick="changelockvalue('lock5', 100000)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock5', 10000)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock5', 1000)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock5', 100)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock5', 10)">0</button>
+        <button class="locknumber" onclick="changelockvalue('lock5', 1)">0</button>
+        <div class="solvedbox">
+          <h3>Solved!</h3>
+          <p>RECENT GOOGLE SEARCH HISTORY: (from various guests of the villa)<p>
+          <ul>
+            <li>Whistleblowing 101: how not to get caught</li>
+            <li>How to get revenge on a shitty ex-boyfriend</li>
+            <li>How to rig a violin so it plays silently</li>
+            <li>WHERE ARE YOU HIDING CHARLIE GIBSON????</li>
+            <li>Am I gay test</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -89,6 +125,10 @@
         <p>You have unlocked every code!</p>
         <ul>
           <li>LODGE CCTV: The people standing near Celine when the lights went out were Gloria, Father, Brenda and Viola.</li>
+          <li>TICKET: Celine bought a ticket recently for some kind of performance or show.</li>
+          <li>CLINIC RECORD: Gloria Goldenberg has been a patient of the London Plastic Beauty Clinic since 2005.</li>
+          <li>TEXT RECORDS: "To the editor of the Daily Lion - I have reason to believe that certain clients of my company haven't paid their taxes. From P"</li>
+          <li>NOTES: A sheet of notes that Celine made prior to her death.</li>
         </ul>
         <ul>
       </div>
